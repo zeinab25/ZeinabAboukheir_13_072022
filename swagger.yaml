@@ -2,8 +2,8 @@ swagger: "2.0"
 info:
     title: Bank Argent API documentation
     description: modeling of API endpoints for the transaction part in the development phase
-    version: "1.0.0"
-    termsOfService: "http://swagger.io/terms/"
+    version: 1.0.0
+    termsOfService: http://swagger.io/terms/
 host: localhost:3001
 basePath: /api/v1
 schemes:
@@ -34,7 +34,7 @@ paths:
                     description: Invalid Fields
                 "500":
                     description: Internal Server Error
-    transactions/{transactionId}:
+    /transactions/{transactionId}:
         get:
             security:
                 - Bearer: []
@@ -45,11 +45,12 @@ paths:
             parameters:
                 - in: header
                   name: Authorization
+                  type: string
                   description: Attach Bearer JWT token
                   required: true
                 - in: path
                   name: transactionId
-                  type: interger
+                  type: integer
                   description: transaction id
                   required: true
             produces:
