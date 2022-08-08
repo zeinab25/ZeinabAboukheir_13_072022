@@ -74,11 +74,12 @@ paths:
             parameters:
                 - in: header
                   name: Authorization
+                  type: string
                   description: Attach Bearer JWT token
                   required: true
                 - in: path
                   name: transactionId
-                  type: interger
+                  type: integer
                   description: transaction id
                   required: true
                 - in: body
@@ -108,11 +109,12 @@ paths:
             parameters:
                 - in: header
                   name: Authorization
+                  type: string
                   description: Attach Bearer JWT token
                   required: true
                 - in: path
                   name: transactionId
-                  type: interger
+                  type: integer
                   description: transaction id
                   required: true
             produces:
