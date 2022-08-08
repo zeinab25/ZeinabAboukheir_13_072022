@@ -299,6 +299,10 @@ body {
 	margin-bottom: 2rem;
 }
 
+.name {
+	text-transform: capitalize;
+}
+
 .transaction-button {
 	display: block;
 	width: 100%;

@@ -89,8 +89,9 @@ export default function User() {
 					<div className="header">
 						<h1>
 							Welcome back
-							<br />
-							{user.firstName} {user.lastName}
+							<div className="name">
+								{user.firstName} {user.lastName}
+							</div>
 						</h1>
 						<button
 							onClick={() => {
