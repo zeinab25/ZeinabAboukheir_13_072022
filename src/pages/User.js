@@ -58,14 +58,14 @@ export default function User() {
 						<form onSubmit={handleSubmit}>
 							<h1>Welcome back</h1>
 							<input
-								className="edit-input"
+								className="edit-input name"
 								autoComplete="off"
 								type="text"
 								placeholder={user.firstName}
 								ref={firstNameRef}
 							/>
 							<input
-								className="edit-input"
+								className="edit-input name"
 								autoComplete="off"
 								type="text"
 								placeholder={user.lastName}
